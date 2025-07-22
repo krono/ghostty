@@ -35,7 +35,7 @@ class QuickTerminalWindow: NSPanel {
         // seems to have a "hiccup" and corrupts the frameRect,
         // sometimes setting the size to zero, sometimes corrupting it.
         // If we find we have cached the "initial" frame, use that instead
-        // the propagated one throught the framework
+        // the propagated one through the framework
         super.setFrame(initialFrame ?? frameRect, display: flag)
     }
 

@@ -114,7 +114,7 @@ class QuickTerminalController: BaseTerminalController {
         // Upon first adding this Window to its host view, older SwiftUI
         // seems to have a "hiccup" and corrupts the frameRect,
         // sometimes setting the size to zero, sometimes corrupting it.
-        // We pass the actual window's frame as "inital" frame directly
+        // We pass the actual window's frame as "initial" frame directly
         // to the window, so it can use that instead of the frameworks
         // "interpretation"
         if let qtWindow = window as? QuickTerminalWindow {
